@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>FindYourMeal</title>
+    <link rel = "icon" href = "images/icon.png" type = "image/icon type">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "mediaQuerries.css">
+    <script src = "https://kit.fontawesome.com/8f6fe50022.js" crossorigin = "anonymous"></script>
+</head>
+<body>
+    <div class = "container">
+
+                                    <!-- Header  -->
+        <nav>
+            <div class="hamburgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class = "headerContainer">
+            <header>
+                <div class="logos">
+                    <img id="mobileLogo" src="images/icon.png" alt="Logo">
+                    <img id = "logo" src = "images/logo2.png" alt="Logo">
+                </div>
+                <div class = "image"></div>                 
+            </header>
+        </div>
+        <div class="navbar">
+            <ul class="navbarLinkUl">
+                <li><a href="index.html" class="navbarLink">Home</a></li>
+                <li><a href="mainIngredients.html" class="navbarLink">Main ingredients recipes</a></li>
+                <li><a href="aboutUs.html" class="navbarLink">About us</a></li>
+            </ul>
+        </div>
+        
+                                    <!-- Meal search  -->
+
+        <div class = "mealSearch">
+            <div class = "mealWrapper">
+                <h1 class = "title">Discover recipes with your exact pantry items</h1>
+                <blockquote>“I cook with wine. Sometimes I even add it to the food.”<br>
+                    <cite>- W.C. Fields</cite>
+                </blockquote>  
+                <div class = "mealSearchBox">
+                    <input type = "text" class="searchControl" placeholder = "Enter an ingredient" id = "searchInput">
+                    <button type = "submit" class="searchButton btn" id = "searchButton">
+                        <i class = "fa-solid fa-magnifying-glass"></i>
+                    </button> 
+                </div>
+                <span class="presumedIngr">Presumed ingredients: water, salt, pepper, sugar</span>  
+                
+                
+                                    <!-- Search result  -->
+
+
+                <div class="mealResult">
+                    <h1 class = "title">Your Search Results</h1>
+                    <div id = "meal">
+                        <!-- meal item  -->
+                        <!-- <div class = "mealItem">
+                            <div class = "mealImg">
+                                <img src = "images/food.jpeg" alt = "Food">
+                            </div>
+                            <div class = "mealName">
+                                <h3>Pancakes</h3>
+                                <a href = "#" class = "recipeButton" id="recipeButton"> Get Recipe</a>
+                            </div>
+                        </div> -->
+                        <!-- end of meal item  -->
+                    </div>
+                </div>
+
+                     <!--  Meal Details Window   -->
+
+                <div class = "mealDetails">
+                    <div class="mealDetailsWindow">
+                        <!-- recipe close button  -->
+                        <button type = "button" class = "btn recipeCloseButton" id = "recipeCloseButton">
+                        <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                            <!-- meal content -->
+                        <div class = "mealDetailsContent">
+                            <h2 class="recipeTitle">Meals Name Here</h2>
+                            <p class="recipeCategory">Category Name</p>
+                            <div class="recipeMealImage">
+                                <img src="images/food.jpeg" alt="">
+                            </div>
+                            <div class=" recipeInstruct">
+                                <a href="link" target="_blank" class="instructionLink">View full recipe</a>
+                                <!-- This attribute specifies where to open the linked URL. _blank indicates that the link should open in a new browser window or tab -->
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>    
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
